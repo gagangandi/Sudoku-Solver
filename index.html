@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sudoku Solver Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div id="container">
+        <div class="left-solid-border top-solid-border" id="0"></div>
+        <div class="top-solid-border left-dashed-border" id="1"></div>
+        <div class="top-solid-border left-dashed-border" id="2"></div>
+        <div class="top-solid-border left-solid-border" id="3"></div>
+        <div class="top-solid-border left-dashed-border" id="4"></div>
+        <div class="top-solid-border left-dashed-border" id="5"></div>
+        <div class="top-solid-border left-solid-border" id="6"></div>
+        <div class="top-solid-border left-dashed-border" id="7"></div>
+        <div class="top-solid-border right-solid-border left-dashed-border" id="8"></div>
+        <div class="left-solid-border top-dashed-border" id="9"></div>
+        <div class="left-dashed-border top-dashed-border" id="10"></div>
+        <div class="left-dashed-border top-dashed-border" id="11"></div>
+        <div class="left-solid-border top-dashed-border" id="12"></div>
+        <div class="left-dashed-border top-dashed-border" id="13"></div>
+        <div class="left-dashed-border top-dashed-border" id="14"></div>
+        <div class="left-solid-border top-dashed-border" id="15"></div>
+        <div class="left-dashed-border top-dashed-border" id="16"></div>
+        <div class="right-solid-border left-dashed-border top-dashed-border" id="17"></div>
+        <div class="left-solid-border bottom-solid-border top-dashed-border" id="18"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="19"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="20"></div>
+        <div class="bottom-solid-border left-solid-border top-dashed-border" id="21"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="22"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="23"></div>
+        <div class="bottom-solid-border left-solid-border top-dashed-border" id="24"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="25"></div>
+        <div class="bottom-solid-border right-solid-border left-dashed-border top-dashed-border" id="26"></div>
+        <div class="left-solid-border" id="27"></div>
+        <div class="left-dashed-border" id="28"></div>
+        <div class="left-dashed-border" id="29"></div>
+        <div class="left-solid-border" id="30"></div>
+        <div class="left-dashed-border" id="31"></div>
+        <div class="left-dashed-border" id="32"></div>
+        <div class="left-solid-border" id="33"></div>
+        <div class="left-dashed-border" id="34"></div>
+        <div class="right-solid-border left-dashed-border" id="35"></div>
+        <div class="left-solid-border top-dashed-border" id="36"></div>
+        <div class="left-dashed-border top-dashed-border" id="37"></div>
+        <div class="left-dashed-border top-dashed-border" id="38"></div>
+        <div class="left-solid-border top-dashed-border" id="39"></div>
+        <div class="left-dashed-border top-dashed-border" id="40"></div>
+        <div class="left-dashed-border top-dashed-border" id="41"></div>
+        <div class="left-solid-border top-dashed-border" id="42"></div>
+        <div class="left-dashed-border top-dashed-border" id="43"></div>
+        <div class="right-solid-border left-dashed-border top-dashed-border" id="44"></div>
+        <div class="left-solid-border bottom-solid-border top-dashed-border" id="45"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="46"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="47"></div>
+        <div class="bottom-solid-border left-solid-border top-dashed-border" id="48"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="49"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="50"></div>
+        <div class="bottom-solid-border left-solid-border top-dashed-border" id="51"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="52"></div>
+        <div class="bottom-solid-border right-solid-border left-dashed-border top-dashed-border" id="53"></div>
+        <div class="left-solid-border" id="54"></div>
+        <div class="left-dashed-border" id="55"></div>
+        <div class="left-dashed-border" id="56"></div>
+        <div class="left-solid-border" id="57"></div>
+        <div class="left-dashed-border" id="58"></div>
+        <div class="left-dashed-border" id="59"></div>
+        <div class="left-solid-border" id="60"></div>
+        <div class="left-dashed-border" id="61"></div>
+        <div class="right-solid-border left-dashed-border" id="62"></div>
+        <div class="left-solid-border top-dashed-border" id="63"></div>
+        <div class="left-dashed-border top-dashed-border" id="64"></div>
+        <div class="left-dashed-border top-dashed-border" id="65"></div>
+        <div class="left-solid-border top-dashed-border" id="66"></div>
+        <div class="left-dashed-border top-dashed-border" id="67"></div>
+        <div class="left-dashed-border top-dashed-border" id="68"></div>
+        <div class="left-solid-border top-dashed-border" id="69"></div>
+        <div class="left-dashed-border top-dashed-border" id="70"></div>
+        <div class="right-solid-border left-dashed-border top-dashed-border" id="71"></div>
+        <div class="left-solid-border bottom-solid-border top-dashed-border" id="72"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="73"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="74"></div>
+        <div class="bottom-solid-border left-solid-border top-dashed-border" id="75"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="76"></div>
+        <div class="bottom-solid-border top-dashed-border left-dashed-border" id="77"></div>
+        <div class="bottom-solid-border left-solid-border top-dashed-border" id="78"></div>
+        <div class="bottom-solid-border left-dashed-border top-dashed-border" id="79"></div>
+        <div class="bottom-solid-border right-solid-border left-dashed-border top-dashed-border" id="80"></div>
+    </div>
+    <br>
+    <div id="buttons">
+        <button type="button" class="btn btn-danger" id="generate-sudoku">
+            Get New Puzzle
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <button type="button" class="btn btn-success" id="solve">
+            Solve
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
